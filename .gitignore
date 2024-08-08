@@ -157,3 +157,5 @@ app/frontend/dist/
 *.exe
 *.o
 *.so
+
+.vercel
