@@ -25,17 +25,18 @@ import bodyParser from 'body-parser';
 
 dotenv.config();
 
-const PORT = process.env.PORT || 5000;
-
 const app = express();
 app.use(bodyParser.json());
+app.use(cors());
 
 // routes
 app.use('/api', router);
 
-// enable cors
-app.use(cors());
+// Export the app for Vercel
+export default app;
 
-app.listen(PORT, () => {
-  console.log(`Server running on PORT: ${PORT}`);
-});
+// If you want to run locally (not in production), uncomment the following lines
+// const PORT = process.env.PORT || 5000;
+// app.listen(PORT, () => {
+//   console.log(`Server running on PORT: ${PORT}`);
+// });
