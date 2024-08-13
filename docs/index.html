@@ -1,0 +1,94 @@
+<!-- 
+Stock Research: Market Insights for Smarter Decisions.
+Copyright (C) [2024] [Aakash Yadav]
+This file is part of [stock-research].
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>. 
+-->
+
+<!-- App home page html file -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>Stock Research</title>
+  <link rel="stylesheet" href="./assets/styles/defaultStyle.css">
+  <link rel="stylesheet" href="./assets/styles/header.css">
+  <link rel="stylesheet" href="./assets/styles/footer.css">
+  <link rel="stylesheet" href="./assets/styles/mainContent.css">
+  <link rel="stylesheet" href="./assets/styles/searchBoxForm.css">
+  <link rel="stylesheet" href="./assets/styles/suggestionsList.css">
+  <link rel="stylesheet" href="./assets/styles/stockDetailsAndErrorMessage.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+</head>
+<body>
+  <div id="parentDivInsideBody">
+    <header>
+      <div id="headerElementsContainer">
+        <div id="logoContainer">
+          <img src="./assets/logo/Stock-Research-Logo.png" alt="Stock Research App Logo" id="appLogo">
+        </div>
+        <div id="appNameAndTaglineContainer">
+          <p id="appName">Stock Research</p>
+          <p id="tagline">Market Insights for Smarter Decisions</p>
+        </div>
+      </div>
+    </header>
+  
+    <div id="mainContent">
+      <div id="searchBoxAndSuggestionsListContainer">
+        <form id="companySearchBoxForm">
+          <input type="search" id="companySearchBox" name="equity-searchbox" placeholder="Search a NSE listed company by name; Ex. HDFC" autocomplete="off"/>
+          <button type="submit" id="companySearchBoxFormSubmitButton">Search</button>
+        </form>
+        <div id="suggestionsListContainer">
+          <!-- Container for dynamically generated suggestions list. -->
+        </div>
+      </div>
+  
+      <div id="stockDetailsContainer">
+        <!-- Container for dynamically generated stock details. -->
+      </div>
+      
+    </div>
+
+    <footer>
+      <div id="developer-name-and-redirection-links-container">
+        <span id="developer-name">Made by Aakash</span>
+        <ul id="footer-redirection-links">
+          <li class="footer-redirection-links-items" id="github-source-code"><a href="https://github.com/ydvaakash/stock-research/" target="_blank">View GitHub Repo</a></li>
+          <li class="footer-redirection-links-items" id="linkedin-profile"><a href="https://www.linkedin.com/in/ydvaakash/" target="_blank">Connect on LinkedIn</a></li>
+        </ul>
+      </div>
+  
+      <div id="footer-horizontal-line-container"><hr id="footer-horizontal-line"></div>
+
+      <div id="disclaimerContainer">
+        <span id="disclaimerSpan"><a href='./disclaimer.html' target="_blank">Important Disclaimer</a></span>
+      </div>
+    </footer>
+  </div>
+  
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

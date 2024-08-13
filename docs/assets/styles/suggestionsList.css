@@ -1,0 +1,49 @@
+/* 
+Stock Research: Market Insights for Smarter Decisions.
+Copyright (C) [2024] [Aakash Yadav]
+This file is part of [stock-research].
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+/* Style for #suggestionsListContainer */
+
+#suggestionsListContainer {
+  width: 40rem;
+
+  font-size: 1rem;
+  padding: 0.1rem 0.2rem;
+
+  max-height: 15rem;
+  overflow-y: auto;
+
+  position: absolute; /* Position it relative to the input box */
+
+  background-color: white; /* Background color for visibility */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for visual appeal */
+  z-index: 10; /* Ensure it appears on top */
+  display: none; /* Initially hide it */
+}
+
+.suggestedCompanyNameContainer {
+  padding: 0.1rem 0.2rem;
+}
+
+.suggestedCompanyNameContainer:not(:last-child) {
+  border-bottom: 0.8px solid lightgray;
+}
+
+.suggestedCompanyNameContainer:hover {
+  cursor: pointer;
+}

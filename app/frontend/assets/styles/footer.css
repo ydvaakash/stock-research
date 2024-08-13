@@ -1,0 +1,107 @@
+/* 
+Stock Research: Market Insights for Smarter Decisions.
+Copyright (C) [2024] [Aakash Yadav]
+This file is part of [stock-research].
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+/* Style for Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 2.5rem;
+
+  background-color: #3A5BAE;
+  color: #F5F7FA;
+}
+
+#developer-name-and-redirection-links-container {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#developer-name {
+  font-size: 1.3rem;
+}
+
+#footer-redirection-links {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.7rem;
+
+  padding: 0.5rem 0;
+}
+
+.footer-redirection-links-items a {
+  color: #F5F7FA;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.footer-redirection-links-items a:visited {
+  color: #E1E4E9;
+}
+
+.footer-redirection-links-items a:hover {
+  color: #CED3DA;
+}
+
+.footer-redirection-links-items a:active {
+  color: #B3B8C2;
+}
+
+#footer-horizontal-line-container {
+  width: auto;
+}
+
+#footer-horizontal-line {
+  width: 100%;
+
+  border: 0.12rem solid lightgrey;
+}
+
+#disclaimerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#disclaimerSpan a {
+  color: #F5F7FA;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+#disclaimerSpan a:visited {
+  color: #E1E4E9;
+}
+
+#disclaimerSpan a:hover {
+  color: #CED3DA;
+}
+
+#disclaimerSpan a:active {
+  color: #B3B8C2;
+}
