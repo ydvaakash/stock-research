@@ -1,0 +1,73 @@
+/* 
+Stock Research: Market Insights for Smarter Decisions.
+Copyright (C) [2024] [Aakash Yadav]
+This file is part of [stock-research].
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+/* Style for Header */
+
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+
+  background-color: #3A5BAE;
+  color: #F5F7FA;
+}
+
+#headerElementsContainer {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.8rem;
+
+  width: 100%;
+  margin: 0.5rem 0.7rem;
+}
+
+#logoContainer {
+  height: 100%;
+  width: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#appLogo {
+  width: 4rem;
+  height: 4rem;
+}
+
+#appNameAndTaglineContainer {
+  width: auto;
+  padding: 0 0.1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#appName {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#tagline {
+  font-size: 1.5rem;
+  font-style: italic;
+}

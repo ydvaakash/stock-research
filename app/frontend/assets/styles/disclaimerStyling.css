@@ -1,0 +1,96 @@
+/* 
+Stock Research: Market Insights for Smarter Decisions.
+Copyright (C) [2024] [Aakash Yadav]
+This file is part of [stock-research].
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+/* Style for webpage showing disclaimer */
+
+#mainContent {
+  width: 95%;
+  padding: 2rem;
+  background-color: #f1f4f8;
+
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0.4rem;
+  
+  box-shadow: 0px 4px 8px 0px rgba(193, 201, 210, 0.5), /* Bottom-right shadow */
+              0px -4px 8px 0px rgba(193, 201, 210, 0.5), /* Top-left shadow */
+              4px 0px 8px 0px rgba(193, 201, 210, 0.5),  /* Right shadow */
+              -4px 0px 8px 0px rgba(193, 201, 210, 0.5); /* Left shadow */
+}
+
+#returnBackToAppHyperlinkContainer {
+  width: 100%;
+  padding: 0.2rem 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+#returnBackToAppHyperlink {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+#returnBackToAppHyperlink a {
+  text-decoration: underline;
+  color: #22222f;
+}
+
+#returnBackToAppHyperlink a:visited {
+  color: #22222f;
+}
+
+#returnBackToAppHyperlink a:hover {
+  color: #22222f;
+}
+
+#returnBackToAppHyperlink a:active {
+  color: #22222f;
+}
+
+#disclaimerContentContainer {
+  width: 100%;
+  padding: 0.2rem 2rem 0.2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+
+#disclaimerMainHeading {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#disclaimerPointsOrderedList {
+  text-align: justify;
+
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  row-gap: 0.5rem;
+}
+
+.disclaimerIndividualPointHeading {
+  font-weight: 600;
+}
