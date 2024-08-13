@@ -1,0 +1,73 @@
+/* 
+Stock Research: Market Insights for Smarter Decisions.
+Copyright (C) [2024] [Aakash Yadav]
+This file is part of [stock-research].
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+/* Style for #searchBoxAndSuggestionsListContainer */
+
+#searchBoxAndSuggestionsListContainer {
+  width: auto;
+  padding: 0.5rem auto;
+
+  background-color: #f1f4f8;
+  border-radius: 0.4rem;
+  
+  box-shadow: 0px 4px 8px 0px rgba(193, 201, 210, 0.5), /* Bottom-right shadow */
+              0px -4px 8px 0px rgba(193, 201, 210, 0.5), /* Top-left shadow */
+              4px 0px 8px 0px rgba(193, 201, 210, 0.5),  /* Right shadow */
+              -4px 0px 8px 0px rgba(193, 201, 210, 0.5); /* Left shadow */
+}
+
+#companySearchBoxForm {
+  padding: 1rem;
+  border-radius: 0.4rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+#companySearchBox {
+  width: 40rem;
+  font-size: 1.1rem;
+  padding: 0.1rem 0.2rem;
+
+  border: 1px solid darkgrey;
+  border-radius: 0.4rem 0 0 0.4rem;
+}
+
+#companySearchBoxFormSubmitButton {
+  font-size: 1.1rem;
+  padding: 0.1rem 0.4rem;
+
+  border: 1px solid darkgrey;
+  border-radius: 0 0.4rem 0.4rem 0;
+  cursor: pointer;
+
+  transition: transform 0.1s ease;
+}
+
+#companySearchBoxFormSubmitButton:active {
+  transform: scale(0.95); /* Scale down the button when pressed */
+}
+
+#companySearchBoxFormSubmitButton:hover {
+  background-color: #e0e3e8;
+}
